@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jianqiao Gu | Economics</title>
+  <meta name="description" content="Academic homepage of Jianqiao (Tom) Gu — Economics undergraduate focusing on development, welfare, and labor economics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10; --panel:#121318; --muted:#9aa3af; --text:#e5e7eb; --accent:#60a5fa;
+      --ring: rgba(96,165,250,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--text); background:radial-gradient(1200px 700px at 85% -10%, #1c2333 0%, rgba(12,14,18,0) 60%), var(--bg);}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(6px); background:rgba(11,12,16,.6); border-bottom:1px solid #1f2937; z-index:50}
+    nav{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 24px}
+    .brand{font-weight:700; letter-spacing:.2px}
+    .navlinks{display:flex; gap:18px; flex-wrap:wrap}
+    .pill{display:inline-block; padding:8px 12px; border:1px solid #1f2937; border-radius:999px; background:linear-gradient(180deg, #131721, #0f121a); color:#cbd5e1}
+    .pill:hover{border-color:#374151}
+    main{padding:24px}
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; margin-top:20px}
+    .card{background:linear-gradient(180deg, #12151f, #0f1219); border:1px solid #1f2937; border-radius:18px; padding:22px}
+    .shadow{box-shadow: 0 10px 30px rgba(2,6,23,.35)}
+    .muted{color:var(--muted)}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .section{margin-top:28px}
+    h1{font-size:28px; margin:0 0 8px}
+    h2{font-size:22px; margin:0 0 10px}
+    h3{font-size:18px; margin:14px 0 8px}
+    p{line-height:1.7}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .avatar{width:120px; height:120px; border-radius:14px; object-fit:cover; border:1px solid #1f2937}
+    .btn{display:inline-flex; gap:8px; align-items:center; padding:10px 14px; border-radius:10px; border:1px solid #1f2937; background:#0e1220; color:#dbeafe; font-weight:600}
+    .btn:hover{box-shadow:0 0 0 4px var(--ring)}
+    .badge{font-size:12px; padding:4px 8px; border-radius:999px; border:1px solid #263244; color:#9ec1ff}
+    .list-tile{padding:14px; border:1px solid #1f2937; border-radius:12px; background:#0e121a}
+    .footer{margin:48px 0 16px; color:#94a3b8; font-size:14px}
+    @media (max-width: 840px){
+      .hero{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      nav{flex-direction:column; align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="brand">Jianqiao Gu</div>
+      <div class="navlinks">
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#research">Research</a>
+        <a class="pill" href="#papers">Papers</a>
+        <a class="pill" href="#teaching">Notes</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="card shadow">
+        <div style="display:flex; gap:16px; align-items:center; margin-bottom:10px">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/000000?v=4" alt="portrait placeholder"/>
+          <div>
+            <h1>Jianqiao (Tom) Gu</h1>
+            <div class="muted">Economics, The Ohio State University · Development · Welfare · Labor</div>
+            <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap">
+              <a class="btn" href="#" id="cv-link">CV</a>
+              <a class="btn" href="https://ssrn.com/" target="_blank" rel="noopener">SSRN</a>
+              <a class="btn" href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+              <a class="btn" href="mailto:gu.1218@buckeyemail.osu.edu">Email</a>
+            </div>
+          </div>
+        </div>
+        <p>My interests center on development, welfare, and labor economics, with a current focus on structural poverty and consumption patterns. I am building the ‘Consumption Structure Index (CSI)’ as a theory-driven framework to identify functional and symbolic exclusion beyond income metrics.</p>
+        <!-- 简短中文简介（可保留或删除）
+        <p>我目前关注发展经济学、福利经济学与劳动经济学，正在构建一个面向结构性贫困识别的‘消费结构指数（CSI）’框架。</p>
+        -->
+      </div>
+      <div class="card">
+        <h2>Highlights</h2>
+        <ul>
+          <li><span class="badge">Working</span> Consumption Structure Index (CSI): theory note and measurement design.</li>
+          <li><span class="badge">Notes</span> Readings on human capital, social capital, and symbolic exclusion.</li>
+          <li><span class="badge">Goal</span> Ph.D. preparation; RA experience; honors thesis in progress.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section card">
+      <h2>About</h2>
+      <p>I am an undergraduate in Economics at The Ohio State University. My current projects explore how consumption structure reveals hidden constraints that traditional income or MPI measures miss. I am interested in theory that travels well to policy and in measurement that is transparent and replicable.</p>
+      <div class="grid-2" style="margin-top:10px">
+        <div class="list-tile">
+          <h3>Fields</h3>
+          <ul>
+            <li>Development Economics</li>
+            <li>Welfare Economics</li>
+            <li>Labor Economics</li>
+          </ul>
+        </div>
+        <div class="list-tile">
+          <h3>Keywords</h3>
+          <ul>
+            <li>Human capital, O-Ring, returns to schooling</li>
+            <li>Structural poverty, symbolic goods</li>
+            <li>Measurement design, multidimensional indices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section card">
+      <h2>Research</h2>
+      <div class="list-tile">
+        <h3>Consumption Structure Index (CSI)</h3>
+        <p>CSI proposes a fixed internal structure (weights and roles) with locally benchmarked thresholds to detect functional and symbolic constraints. A technical note with formal notation and examples is available upon request.</p>
+      </div>
+      <div class="grid-2" style="margin-top:12px">
+        <div class="list-tile">
+          <h3>Planned empirical sketch</h3>
+          <p>Illustrative calibration and robustness checks against alternative cutoff vectors. Pilot templates for reporting and visualization.</p>
+        </div>
+        <div class="list-tile">
+          <h3>Reading notes</h3>
+          <p>Summaries connecting Sen’s capability approach, Bourdieu on symbolic capital, and poverty measurement (FGT, MPI).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Papers -->
+    <section id="papers" class="section card">
+      <h2>Papers & Drafts</h2>
+      <ul>
+        <li>
+          <strong>Rethinking Poverty: CSI as a Structural Alternative to Income and MPI</strong> — theory note, draft in preparation. <em>Working paper forthcoming</em>.
+        </li>
+        <li>
+          <strong>Human Capital Quality and Middle-Income Traps</strong> — concept memo linking education quality, demographic structure, and growth constraints.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Notes / Teaching -->
+    <section id="teaching" class="section card">
+      <h2>Notes</h2>
+      <ul>
+        <li>Micro: Slutsky, compensated demand, PPF, MRS vs. MRT.</li>
+        <li>Macro: RBC basics, income–expenditure identity in one-period models.</li>
+        <li>Metrics: identification checklists, data hygiene, reproducibility notes.</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:gu.1218@buckeyemail.osu.edu">gu.1218@buckeyemail.osu.edu</a></p>
+      <p>LinkedIn / GitHub / SSRN links can be added above. Replace placeholders with your URLs.</p>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Jianqiao Gu. This site is a single-file static page. You can host it on GitHub Pages.</div>
+  </main>
+
+  <script>
+    // tiny helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
